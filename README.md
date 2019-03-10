@@ -10,7 +10,7 @@ https://www.cnblogs.com/hzmark/p/mq-delay-msg.html
 # 使用
 rocketmq的接口不变，只是timelevel的意义变成了秒为单位的延时值。
 生产者：
-public MessageExtBrokerInner buildScheduleMessage(long index) {
+        public MessageExtBrokerInner buildScheduleMessage(long index) {
     		Random rr=new Random();
         MessageExtBrokerInner msg = new MessageExtBrokerInner();
         msg.setTopic("FooBar");
